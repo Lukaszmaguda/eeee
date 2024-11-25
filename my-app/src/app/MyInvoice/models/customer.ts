@@ -1,4 +1,4 @@
-class Customer{
+export class Customer{
     constructor(){}
 
     nazwa: string = "";
