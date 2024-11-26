@@ -1,0 +1,56 @@
+{{testVariable | json}}        
+        
+        
+        
+        <form onsubmit="zapiszDane()">
+            <div class="form-group">
+                <label for="exampleInputName1">Nazwa firmy</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="Wprowadź nazwę firmy" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputNip1">NIP</label>
+                <input type="text" class="form-control" id="exampleInputNip1" placeholder="Wprowadź NIP" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputMiasto1">Miasto</label>
+                <input type="text" class="form-control" id="exampleInputMiasto1" placeholder="Wprowadź miasto" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUlica1">Ulica</label>
+                <input type="text" class="form-control" id="exampleInputUlica1" placeholder="Wprowadź ulicę" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputNumerDomu1">Numer domu</label>
+                <input type="text" class="form-control" id="exampleInputNumerDomu1" placeholder="Wprowadź numer domu" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputNumerMieszkania1">Numer mieszkania</label>
+                <input type="text" class="form-control" id="exampleInputNumerMieszkania1" placeholder="Wprowadź numer mieszkania" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputKodPocztowy1">Kod pocztowy</label>
+                <input type="text" class="form-control" id="exampleInputKodPocztowy1" placeholder="Wprowadź kod pocztowy" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Uwagi</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Branża</label>
+                <select class="form-select" id="exampleFormControlSelect1">
+                    <option selected>Wybierz branżę</option>
+                    <option value="IT">IT</option>
+                    <option value="Budownictwo">Budownictwo</option>
+                    <option value="Medycyna">Medycyna</option>
+                </select>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Aktywny</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Zapisz</button>
+            <button type="button" class="btn btn-secondary" onclick="wstawDane()">Wstaw dane i zablokuj</button>
+        </form>
