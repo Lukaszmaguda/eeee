@@ -1,35 +1,33 @@
 {{testVariable | json}}        
         
-        
-        
-        <form onsubmit="zapiszDane()">
-            <div class="form-group">
-                <label for="exampleInputName1">Nazwa firmy</label>
-                <input type="text" class="form-control" id="exampleInputName1" placeholder="Wprowadź nazwę firmy" required>
-            </div>
+    <form (ngSubmit)="zapiszDane" novalidate>
+        <div class="form-group">
+            <label for="exampleInputName1" [(ngModel)] ="last">Nazwa firmy</label>
+            <input type="text" class="form-control" id="exampleInputName1" placeholder="Wprowadź nazwę firmy" name ="name" [(ngModel)]>
+        </div>
             <div class="form-group">
                 <label for="exampleInputNip1">NIP</label>
-                <input type="text" class="form-control" id="exampleInputNip1" placeholder="Wprowadź NIP" required>
+                <input type="text" class="form-control" id="exampleInputNip1" placeholder="Wprowadź NIP">
             </div>
             <div class="form-group">
                 <label for="exampleInputMiasto1">Miasto</label>
-                <input type="text" class="form-control" id="exampleInputMiasto1" placeholder="Wprowadź miasto" required>
+                <input type="text" class="form-control" id="exampleInputMiasto1" placeholder="Wprowadź miasto">
             </div>
             <div class="form-group">
                 <label for="exampleInputUlica1">Ulica</label>
-                <input type="text" class="form-control" id="exampleInputUlica1" placeholder="Wprowadź ulicę" required>
+                <input type="text" class="form-control" id="exampleInputUlica1" placeholder="Wprowadź ulicę">
             </div>
             <div class="form-group">
                 <label for="exampleInputNumerDomu1">Numer domu</label>
-                <input type="text" class="form-control" id="exampleInputNumerDomu1" placeholder="Wprowadź numer domu" required>
+                <input type="text" class="form-control" id="exampleInputNumerDomu1" placeholder="Wprowadź numer domu">
             </div>
             <div class="form-group">
                 <label for="exampleInputNumerMieszkania1">Numer mieszkania</label>
-                <input type="text" class="form-control" id="exampleInputNumerMieszkania1" placeholder="Wprowadź numer mieszkania" required>
+                <input type="text" class="form-control" id="exampleInputNumerMieszkania1" placeholder="Wprowadź numer mieszkania">
             </div>
             <div class="form-group">
                 <label for="exampleInputKodPocztowy1">Kod pocztowy</label>
-                <input type="text" class="form-control" id="exampleInputKodPocztowy1" placeholder="Wprowadź kod pocztowy" required>
+                <input type="text" class="form-control" id="exampleInputKodPocztowy1" placeholder="Wprowadź kod pocztowy">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Uwagi</label>

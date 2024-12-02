@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Supplier } from '../../models/supplier';
-import { CommonModule } from '@angular/common';
-import { InvoiceModule } from '../../invoice.module';
+import { Customer } from '../../models/customer';
+
 
 @Component({
   selector: 'app-customer-form',
@@ -10,5 +9,9 @@ import { InvoiceModule } from '../../invoice.module';
   styleUrl: './customer-form.component.scss'
 })
 export class CustomerFormComponent {
-  testVariable: Supplier = new Supplier('asasas');
+  customer : Customer = new Customer();
+
+  saveData(){
+    console.log(this.customer)
+  }
 }
