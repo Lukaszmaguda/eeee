@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Customer } from '../../invoice/models/customer';
 
 @Component({
   selector: 'app-product-form-component',
