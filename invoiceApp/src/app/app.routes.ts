@@ -4,7 +4,6 @@ import { CustomerFormComponent } from './invoice/components/customer-form/custom
 
 export const routes: Routes = [
     { path: "product-form", component:ProductFormComponentComponent},
-    { path: "customer-form", component:CustomerFormComponent},
     { path: "invoice",
         loadChildren: () => import('./invoice/invoice.module').then ( m => m.InvoiceModule)
     }
