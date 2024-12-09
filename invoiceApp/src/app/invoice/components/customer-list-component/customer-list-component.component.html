@@ -1,1 +1,5 @@
-<p>customer-list-component works!</p>
+<app-customer-list-element 
+    *ngFor="let customer of customerList" 
+    [customer] = "customer"
+    
+></app-customer-list-element>

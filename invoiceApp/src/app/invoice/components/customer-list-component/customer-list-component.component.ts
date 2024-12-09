@@ -12,10 +12,9 @@ import { Customer } from '../../models/customer';
 export class CustomerListComponentComponent {
   customerList: Customer[];
   constructor(
-    private customerService: CustomerService,
-    private router: Router){
+    private customerService: CustomerService){
       console.log(this.customerService.getCustomer());
       this.customerList = this.customerService.getCustomer();
-    }
-
-}
+  
+      
+}}
